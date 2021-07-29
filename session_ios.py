@@ -1,6 +1,6 @@
 from appium import webdriver
 import os
-import time
+# import time
 
 CWD = os.getcwd()
 HOST = 'http://localhost'

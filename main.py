@@ -2,8 +2,8 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-from appium import webdriver
-import unittest
+# from appium import webdriver
+# import unittest
 
 desired_caps = dict(
     platformName='iOS',
@@ -12,6 +12,7 @@ desired_caps = dict(
     deviceName='iPhone Simulator',
 
 )
+
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
