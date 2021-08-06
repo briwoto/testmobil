@@ -30,7 +30,9 @@ jobs:
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         brew install node
         echo node -v
-        sh "appium"
+        npm install carthage
+        npm install -g appium
+        appium
     - name: Run app
       run: |
         python session_ios.py
