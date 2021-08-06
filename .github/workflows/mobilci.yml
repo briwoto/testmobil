@@ -28,11 +28,16 @@ jobs:
     - name: Install homebrew and appium
       run: |
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    - name: Install node
+      run: |
         brew install node
         echo node -v
-        npm install carthage
-        npm install -g appium
-        appium
+    - name: Appium pre requisites
+      run: npm install carthage
+    - name: Install Appium
+      run: npm install -g appium
+    - name: Run Appium
+      run: appium
     - name: Run app
       run: |
         python session_ios.py
